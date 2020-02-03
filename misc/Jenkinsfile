@@ -6,7 +6,7 @@ node {
   }
 
   stage('Build image') {
-    app = docker.build(''https://github.com/mizuochi-hikaru/devops_sample_nodejs.git)
+    app = docker.build('mizuochii/devops_sample_nodejs')
   }
 
   stage('Test') {
